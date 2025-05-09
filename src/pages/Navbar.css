@@ -1,0 +1,95 @@
+/* Navbar.css */
+.custom-navbar {
+ 
+
+  
+  
+    background-color: transparent  !important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+    padding: 1rem 2rem;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+  }
+  .custom-navbar.scrolled {
+    background-color: white !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.custom-navbar .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar.scrolled .nav-link,
+.custom-navbar.scrolled .navbar-brand {
+  color: #333 !important;
+}
+  .name{
+  
+    padding-right: 35%;
+    padding-left: -130px;
+  }
+  
+  .navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: #4a4a4a !important;
+    letter-spacing: 1px;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333 !important;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #ff5e5e; /* underline color */
+
+
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+   
+  }
+  
+  .navbar-nav {
+    gap: 20px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .nav-link.active {
+  color: #ff5e5e !important;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  background-color: #ff5e5e;
+}
+.navbar,
+.navbar * {
+  user-select: none;
+}
+
+.nav-link {
+  cursor: pointer;
+}

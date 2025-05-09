@@ -1,0 +1,109 @@
+*{
+  cursor: pointer;
+
+}
+.home-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #4a76f0; /* beautiful soft blue */
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+  .no-caret {
+    caret-color: transparent;     /* Hides the blinking cursor */
+    pointer-events: none;         /* Disables interaction */
+    user-select: none;            /* Prevents text selection */
+  }
+  
+  .home-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1d3557;
+    
+    margin-bottom: 25px;
+    z-index: 1;
+  }
+  .text-wrapper {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px;  /* push it upward slightly */
+  }
+  
+  .home-description {
+    font-size: 18px;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    z-index: 1;
+  }
+  .home-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4a76f0;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .home-button:hover {
+    background-color: #3952c4;
+  }
+  .home-container {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-image: url('../assets/bg-pink.jpg'); /* or from public: url("/bg-pink.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4); /* adjust to make more/less visible */
+    z-index: 0;
+  }
+  
+  
+  
+
+  .background-icon {
+    position: absolute;
+    width: 80px;
+    opacity: 0.15;
+    z-index: 0;
+  }
+  
+
+  
+  /* Center the icon */
+  .center-icon {
+ 
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+ 
+  /* Optional other icons */
+  .bottom-right {
+    bottom: 10px;
+    right: 10px;
+    top:30%;
+    right: 13%;
+  }
+  
+  
+  
