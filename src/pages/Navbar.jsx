@@ -1,9 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import './Navbar.css';
-import React, { useState, useEffect } from 'react';
+import React, {  useEffect } from 'react';
 export default  function Navbars(){
     useEffect(() => {
         const handleScroll = () => {
