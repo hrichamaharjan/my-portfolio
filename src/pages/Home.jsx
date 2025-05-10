@@ -2,10 +2,13 @@
 import Navbars from './Navbar';
 import Contact from './Contact';
 import Projects from './Projects';
+import { Link } from 'react-scroll';
+
 
 import './About.css';
 import './Home.css';
 export default function Home(){
+
   return(
     <div>
         <Navbars/>
@@ -19,7 +22,10 @@ export default function Home(){
             <p class="home-description">
                 Passionate about using data to drive business decisions, optimize processes, and inspire innovation.
                 </p>
-                <a href="#contact" class="home-button">Contact Me</a>
+                <Link to="contactme" smooth={true} duration={600} className="home-button">
+                Contact Me
+              </Link>
+
 
             </div>
         
@@ -43,7 +49,12 @@ export default function Home(){
           </div>
         </div>
         <Projects/>
-        <Contact/>
+       
+        <div id="contactme">
+          <Contact />
+        </div>
+          
+   
         
     
             
