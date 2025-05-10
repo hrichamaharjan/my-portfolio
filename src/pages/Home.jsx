@@ -1,11 +1,8 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import Navbars from './Navbar';
 import Contact from './Contact';
 import Projects from './Projects';
-import Abouts from './About';
+
 import './About.css';
 import './Home.css';
 export default function Home(){
@@ -14,8 +11,8 @@ export default function Home(){
         <Navbars/>
       
         <div id="home" class="home-container no-caret">
-            <img src="/freepikdata.png" class="background-icon center-icon" />
-            <img src="/freepikdata2.png" class="background-icon bottom-right" />
+            <img   src="/freepikdata.png" alt="description" class="background-icon center-icon" />
+            <img src="/freepikdata2.png" alt="description" class="background-icon bottom-right" />
             <div className='text-wrapper'>
             <h1 class="home-title"> HI! I AM Hricha</h1>
             <h2 class="home-subtitle">Aspiring Data Analyst | Business Analytics Graduate Student</h2>
